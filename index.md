@@ -4,7 +4,7 @@ title: Main Page
 ---
 {% include JB/setup %}
 
-## Welcome Stranger
+## Welcome stranger,
 
 I am Krzysztof Kaczor and I work as software developer. This place is intended to be a shelter for my thoughts about computer science and software development in general.
 

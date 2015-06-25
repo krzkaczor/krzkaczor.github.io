@@ -8,8 +8,8 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Krzysztof Kaczor Blog
-tagline: Site Tagline
+title : Krzysztof Kaczor's Blog
+tagline: My thoughts
 author :
   name : Krzysztof Kaczor
   email : krzkaczor@gmail.com
