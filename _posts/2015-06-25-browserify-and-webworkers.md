@@ -13,4 +13,4 @@ Recently I wanted to add `Web Workers` support to one of my projects that alread
 
 My first (not the cleanest) idea was to export globally whole module (--standalone option) and access it from Web Worker but that didn't worked - I guess that it was because of limitations of `Web Workers` and their API.
 
-Finally, I came upon [webworkify](https://github.com/substack/webworkify) which wraps importing (or requiring ;) ) of `Web Worker` and uses `URL.createObjectUrl` to load it from string.
+Finally, I came upon [webworkify](https://github.com/substack/webworkify) which wraps importing (or requiring ;) ) of `Web Worker` and uses `URL.createObjectUrl` to load it from string. With that approach everything worked smoothly.
