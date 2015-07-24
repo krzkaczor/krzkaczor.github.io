@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting child elemenets using Windows Automation in reliable way"
+title: "Getting child elements using Windows Automation in reliable way"
 description: ""
 category: 
 tags: [C#, windows, windows-automation, ui-automation]
@@ -11,7 +11,7 @@ During work on [STAMP](http://stampapp.io) for Windows I needed a reliable way t
 
 On Mac this is easy peasy - you have `Apple Script` which was crafted exactly to do stuff like that. But on Windows there is no one easy way to accomplish this goal. You can use very low level api like `P/Invoke` or try `Windows Automation` or use third party tools to do that. In the end I used mix of `P/Invoke` magic (mostly to send communicates to other application like sending key strokes or clicks) with layer of `Windows Automation` to provide reliable solution. In this blog post I wanted to talk about problem with `Windows Automation` that I encountered.
 
-`Windows Automation API` consists of `FindAll` method to get child/descendats of a given element. For example:
+`Windows Automation API` consists of `FindAll` method to get child/descendants of a given element. For example:
 
 	rootElement.FindAll(TreeScope.Children, PropertyCondition.TrueCondition);
 
@@ -37,7 +37,7 @@ and use:
 
 		rootElement.GetAllChildren();
 
-Similary you can craft recursive method to get all descendatns:
+Similarly you can craft recursive method to get all descendants:
 
         public static List<AutomationElement> GetAllDescendants(this AutomationElement element, int depth = 0, int maxDepth = 3)
         {
